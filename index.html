@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<link type="text/css" rel="stylesheet" href="style/style.css" />
+    <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="js/jquery.anchor.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/form_request_min.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+
+    <script>
+        $(function() {
+            $( "#datepicker" ).datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script>
+
+	<title>Automation Test Course 2013</title>
+</head>
+
+<body>
+
+<div id="modal" style="display: none">
+    <div id="wind">
+		<h2>Спасибо за регистрацию!</h2>
+        <p><input type="button" class="submit-button" value="ОK" id="buttonOK"></p>
+    </div>
+</div>
+
+<div id="wrapper">
+	<div id='header_toolbar'>
+		<div id="header_navi">
+			<div id='menu'>
+				<ul>
+					<li><a href='#about' class='topLink'>О курсе</a></li>
+					<li><a href='#organizer' class='topLink'>Организаторы</a></li>
+					<li><a href='#participant' class='topLink'>Участникам</a></li>
+					<li><a href='#contacts' class='topLink'>Контакты</a></li>
+				</ul>
+			</div>
+
+				<h1>Automation Test Course 2013</h1>
+                <span id="news">Отслеживайте последние новости в Twitter <a href="https://twitter.com/search?q=%23KievATC&mode=realtime" target="_blank" class="noStyle">#KievATC</a></span>
+		</div>
+	</div>
+
+	<div id='container'>
+		<div class='content' id="about">
+			<h2>Общая информация</h2>
+
+            <p>Курс автоматизации тестирования web-приложений предназначен для тех, кто хочет получить свой первый рабочий опыт в IT.
+            В первую очередь мы ориентируемся на студентов 4-5 курсов, которые не только имеют желание связать свою карьеру с разработкой ПО,
+            но и прикладывают для этого усилия. Занятия будут проходить на бесплатной основе в офисе компании <a href="http://www.levi9.com/">Levi9 Ukraine</a>.</p>
+            <p>Весь учебный период будет разбит на 2 этапа. На первом будут преподаваться основы тестирования ПО.
+            На втором этапе начнется работа с автоматизацией web-приложений на Java + WebDriver.
+            Таким образом в результате прохождения данного курса, участник будет обладать всеми необходимыми навыками для выполнения работы Junior Automation Test Devloper'a.</p>
+            <p>Первое занятие состоится 07.10.2013 в 19:00. В последующие 6 недель занятия будут проходить 3 раза в неделю (Пн, Ср, Пт) в 19:00.</p>
+        </div>
+
+		
+		<div class='content'>
+            <h2 id='organizer'>Организаторы</h2>
+
+            <div class="presenter">
+                <div class="photos">
+                    <img src="image/Vlad-Babenko.png">
+                </div>
+
+                <div class="description">
+                    <h4>Владислав Бабенко</h4>
+                    <p>Cпециалист в области тестирования ПО. Огромный опыт работы с web-приложениями и тестирования web-platform.
+                    Разработка тестовых стратегий для известных мировых брендов. Координация процесса тестирования и автоматизации.
+                    </p>
+
+                    <div>
+                        <ul>
+                            <li class="linIn"><span><a href="http://www.linkedin.com/pub/vladyslav-babenko/3a/590/a05/en" target="_blank" class="imageCenter">LinkedIn</a></span></li>
+                            <li class="twitter"><span><a href="https://twitter.com/Babenk0" target="_blank" class="imageCenter">Twitter</a></span></li>
+                            <li class="skype"><span><a class="imageCenter">v.babenk0</a></span></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="presenter presenterSpace">
+                <div class="photos">
+                    <img src="image/Alexey-Zvolinskiy.png">
+                </div>
+
+                <div class="description">
+                    <h4>Алексей Зволинский aka Alex Fruzenshtein</h4>
+                    <p>Специалист в области автоматизации тестирования и создания web-приложений.
+                    Автор блога <a href="http://Fruzenshtein.com" class="noStyle" style="color: #636365">Fruzenshtein.com</a>, персональный тренер по тестированию ПО, участник сообщества Java Code Geeks.</p>
+                    <div>
+                        <ul>
+                            <li class="linIn"><span><a href="http://ua.linkedin.com/in/fruzenshtein" target="_blank" class="imageCenter">LinkedIn</a></span></li>
+                            <li class="twitter"><span><a href="https://twitter.com/Fruzenshtein" target="_blank" class="imageCenter">Twitter</a></span></li>
+                            <li class="skype"><span><a class="imageCenter">fruzenshtein</a></span></li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+
+        </div>
+
+		
+		<div class='content' id="participant">
+            <h2 >Информация для участников</h2>
+            <p>Для всех желающих принять участие в Automation Test Course 2013 открыта регистрация до 29.09.2013.
+            Отправляйте свои заявки с нашего сайта, чтобы попасть на собеседование.</p>
+            <p>Каждый претендент индивидуален и обладает личными человеческими качествами. Для эффективного обучения важны:</p>
+            <ul>
+                <li>Ответственность</li>
+                <li>Настойчивость</li>
+                <li>Упорство</li>
+                <li>Пунктуальность</li>
+            </ul>
+            <p>Существенным преимуществом будут знания в следующих технических областях:</p>
+            <ul>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+            <p>Разумеется, что эти пункты уже являются крепким фундаментом для развития и обучать людей с таким багажем знаний куда проще.
+                Но не взирая на это, предпочтительным остаются именно человеческие качества студентов.</p>
+            <p><strong>Для обучения необходимо иметь ноутбук.</strong></p>
+		</div>
+
+		
+		<div class='content form-container' id="contacts">
+
+                        <h2 style="text-align: left">Регистрация</h2>
+
+                        <div class="">
+                            <div class="form-title">Имя<span class="required"> *</span></div>
+                            <input id="name" class="form-field" type="text" name="name" placeholder="Введите имя" /><br />
+                        </div>
+
+                         <div class="">
+                            <div class="form-title">Фамилия<span class="required"> *</span></div>
+                            <input id="surname" class="form-field" type="text" name="name" placeholder="Введите фамилию" /><br />
+                         </div>
+
+                        <div class="">
+                            <div class="form-title">Год рождения<span class="required"> *</span></div>
+                            <input class="form-field" id="datepicker" type="text" name="name" placeholder="Введите дату рождения" /><br />
+                        </div>
+
+                        <div class="">
+                            <div class="form-title">Email<span class="required"> *</span></div>
+                            <input id="email" class="form-field" type="text" name="email" placeholder="example@example.com" /><br />
+                        </div>
+
+                        <div class="">
+                            <div class="form-title">Почему Вы хотите участвовать в обучении?<span class="required"> *</span></div>
+                            <textarea id="text" class="form-field" rows="10" name="mess"></textarea><br />
+                        </div>
+
+                        <div class="">
+                            <div class="submit-container">
+								<input id="submit" class="submit-button" type="button" width="200px" value="Отправить заявку" />
+							</div>
+						</div>
+		</div>
+
+</div>
+    <div id='footer'>
+        <p style="padding-top: 20px">
+            <small>Киев, Украина</small><br />
+            <small>2013</small>
+        </p>
+    </div>
+
+
+
+
+</body>
+</html>
